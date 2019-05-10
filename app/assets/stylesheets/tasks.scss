@@ -1,0 +1,25 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.tasks {
+  background-color: #ABC4A1;
+  width: 600px;
+  height: 130px;
+  padding: 30px auto;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2B4234;
+}
+
+a:hover {
+  color: #1C1D21;
+}
+
+.nice_task {
+  background-color: #ABC4A1;
+  width: 600px;
+  height: 160px;
+}

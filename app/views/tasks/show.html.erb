@@ -1,0 +1,19 @@
+<div class = "nice_task">
+<h1><%= @task.title %></h1>
+<h2><%= @task.details%></h2>
+<% if @task.completed %>
+    <h5> Completed: ☑️ </h5>
+  <% else %>
+    <h5> Completed: ⬜️ </h5>
+  <% end %>
+</div>
+  <br>
+  <br>
+  <br>
+<%= link_to "ALL TASKS", tasks_path %>
+<p></p>
+<%= link_to "EDIT TASK", edit_path %>
+<p></p>
+<%= link_to "MARK AS COMPLETED", edit_path %>
+<p></p>
+<%= link_to "🗑 DELETE TASK", destroyer_path, method: :delete, data: {confirm: 'sure?'} %>

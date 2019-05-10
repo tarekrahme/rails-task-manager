@@ -1,0 +1,15 @@
+
+<h1>My Tasks: </h1>
+<%= link_to "➕ NEW", new_task_path %>
+<% @tasks.each do |task| %>
+<div class = 'tasks'>
+  <h2> <%= link_to "#{task.title}", task_path(task.id) %> </h2>
+  <h3> - <%= task.details %> </h3>
+  <% if task.completed %>
+    <h5> Completed: ☑️ </h5>
+  <% else %>
+    <h5> Completed: ⬜️ </h5>
+  <% end %>
+<% end %>
+</div>
+
